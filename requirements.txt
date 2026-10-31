@@ -1,0 +1,8 @@
+# Core pipeline (IDA-side uses only stdlib + IDAPython; these are for the
+# host-side drivers and evaluation)
+openai>=1.0          # OpenAI-compatible client (Ollama / vLLM / OpenAI)
+pandas>=1.5
+numpy>=1.23
+scipy>=1.10          # linear_sum_assignment for semantic matching
+sentencepiece>=0.1.99  # function-name segmentation for evaluation
+nltk>=3.8            # WordNet lemmatizer for evaluation
